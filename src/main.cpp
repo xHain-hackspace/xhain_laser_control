@@ -61,9 +61,10 @@ int main()
         bool exit_pin_entry = false;
         string pin_str = "";
 
-        while(1){
+        while(!pinpad.GetTouchedNumber(touch_nr)){
             time_t seconds = time(NULL);
             LblUser.Draw(ctime(&seconds));
+            thread_sleep_for(250);
         }
 
         while(!exit_pin_entry){

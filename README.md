@@ -1,2 +1,2 @@
 # xhain_laser_control
-A login/access device for controlling our laser.
+A login/access device for our laser.
